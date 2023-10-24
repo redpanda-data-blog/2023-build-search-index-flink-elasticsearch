@@ -5,7 +5,7 @@ CREATE TABLE useractivity (
 ) WITH (
     'connector' = 'kafka',
     'topic' = 'user_activity',
-    'properties.bootstrap.servers' = 'redpanda-1:29092',
+    'properties.bootstrap.servers' = 'localhost:29092',
     'properties.group.id' = 'test-group',
     'properties.auto.offset.reset' = 'earliest',
     'format' = 'json'
